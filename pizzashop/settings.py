@@ -25,7 +25,7 @@ SECRET_KEY = 'fsbou=%45y8n)!2@ei1j2ceukaa5u1h+ktlrfcs=z4off#i*&t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://stormy-mountain-87475.herokuapp.com/', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -131,6 +131,12 @@ LOGIN_REDIRECT_URL ='/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
 
 AUTHENTICATION_BACKENDS = (
     'social_core.backends.facebook.FacebookOAuth2',
