@@ -25,7 +25,7 @@ SECRET_KEY = 'fsbou=%45y8n)!2@ei1j2ceukaa5u1h+ktlrfcs=z4off#i*&t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://stormy-mountain-87475.herokuapp.com/', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['stormy-mountain-87475.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
